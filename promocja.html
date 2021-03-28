@@ -64,10 +64,17 @@
     outline: none;
     overflow: hidden;
 }
+.vege-border {
+    max-width: 80%;
+    height: auto;
+    margin: 0px auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 6px solid #ff660011;
+    position: relative;
+}
 .vege-btn {
     font-weight: 500;
-    max-width: 80%;
-    margin: 10px auto;
     padding: 15px 25px;
     border-radius: 0px;
     border: 1px solid #002255;
@@ -77,19 +84,16 @@
     font-weight: 700;
     color: #ff2233;
     border-color: #ff2233;
-    box-shadow: 0px 0px 0px 5px #ff223311;
 }
 .vege-accept {
     font-weight: 900;
     color: #059600;
     border-color: #059600;
-    box-shadow: 0px 0px 0px 5px #05960011;
 }
 .vege-promo {
     font-weight: 900;
     color: #ff6600;
     border-color: #ff6600;
-    box-shadow: 0px 0px 0px 5px #ff660011;
 }
 .vege-promo:hover {
     background: #ff660011;
@@ -136,7 +140,11 @@
             <div class="vege-content">Nowa promocja w lokalu!</div>
 
 			<div class="vege-center">
-                <a href="https://vege.love" class="vege-link"> <div class="vege-btn vege-promo"> ZAPRASZAMY </div> </a>
+                <a href="https://vege.love" class="vege-link">
+                    <div class="vege-border">
+                        <div class="vege-btn vege-promo"> ZAPRASZAMY </div>
+                    </div>
+                </a>
             </div>
 
 			<div class="vege-nice">

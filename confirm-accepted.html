@@ -64,15 +64,21 @@
     outline: none;
     overflow: hidden;
 }
+.vege-border {
+    max-width: 80%;
+    height: auto;
+    margin: 0px auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 6px solid #05960011;
+    position: relative;
+}
 .vege-btn {
     font-weight: 500;
-    max-width: 80%;
-    margin: 10px auto;
     padding: 15px 25px;
     border-radius: 0px;
     border: 1px solid #002255;
     color: #002255;
-    z-index: 10;
 }
 .vege-cancel {
     position: relative;
@@ -98,39 +104,6 @@
 .vege-promo:hover {
     background: #ff660011;
     z-index: 10;
-}
-.vege-accept::before {
-    position: absolute;
-    top: -8px;
-    left: -8px;
-    content: "";
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    border: 8px solid #05960011;
-    z-index: 1;
-}
-.vege-cancel::before {
-    position: absolute;
-    top: -8px;
-    left: -8px;
-    content: "";
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    border: 8px solid #ff223311;
-    z-index: 1;
-}
-.vege-promo::before {
-    position: absolute;
-    top: -8px;
-    left: -8px;
-    content: "";
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    border: 8px solid #ff660011;
-    z-index: 1;
 }
 .vege-nice {
     font-weight: 700;
@@ -167,12 +140,16 @@
             <div class="vege-content">Twoje zamówienie {ID} z dnia {TIME} zostało:</div>
 
 			<div class="vege-center">
-                <div class="vege-btn vege-accept">Przyjęte do realizacji</div>
+                    <div class="vege-border">
+                        <div class="vege-btn vege-accept">Przyjęte do realizacji</div>
+                    </div>
             </div>
 
             <!--
             <div class="vege-center">
-                <div class="vege-btn vege-cancel">Odrzucone</div>
+                    <div class="vege-border">
+                        <div class="vege-btn vege-cancel">Odrzucone</div>
+                    </div>
             </div>
             -->
 
