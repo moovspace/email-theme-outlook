@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+<style>
+.vege-body {
+    float: left;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+.vege-body * {
+    font-weight: 400;
+    color: #002255;
+    box-sizing: border-box;
+    font-family: 'Open Sans', Arial, Tahoma, Verdana, 'Courier New', Courier, monospace !important;
+    transition: all .6s;
+}
+.vege-bg {
+    float: left;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background: #05960005;
+}
+.vege-message {
+    position: relative;
+    margin: 60px auto;
+    width: 90%;
+    max-width: 768px;
+    padding: 15px 25px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    border: 8px solid #05960011;
+}
+.vege-h1 {
+    font-size: 19px;
+    font-weight: 900;
+    float: left;
+    width: 100%;
+    padding: 5px 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+.vege-content {
+    font-weight: 500;
+    float: left;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.vege-center {
+    float: left;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.vege-a {
+    text-decoration: none;
+    outline: none;
+    overflow: hidden;
+}
+.vege-btn {
+    font-weight: 500;
+    max-width: 80%;
+    margin: 10px auto;
+    padding: 15px 25px;
+    border-radius: 0px;
+    border: 1px solid #002255;
+    color: #002255;
+    z-index: 10;
+}
+.vege-cancel {
+    position: relative;
+    font-weight: 700;
+    color: #ff2233;
+    border-color: #ff2233;
+    z-index: 10;
+}
+.vege-accept {
+    position: relative;
+    font-weight: 900;
+    color: #059600;
+    border-color: #059600;
+    z-index: 10;
+}
+.vege-promo {
+    position: relative;
+    font-weight: 900;
+    color: #ff6600;
+    border-color: #ff6600;
+    z-index: 10;
+}
+.vege-promo:hover {
+    background: #ff660011;
+    z-index: 10;
+}
+.vege-accept::before {
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    content: "";
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 8px solid #05960011;
+    z-index: 1;
+}
+.vege-cancel::before {
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    content: "";
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 8px solid #ff223311;
+    z-index: 1;
+}
+.vege-promo::before {
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    content: "";
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 8px solid #ff660011;
+    z-index: 1;
+}
+.vege-nice {
+    font-weight: 700;
+    font-size: 17px;
+    float: left;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+}
+.vege-bottom {
+    float: left;
+    width: 100%;
+    padding: 20px 0px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-top: 1px solid #002255;
+    color: #002255;
+}
+.vege-name {
+    font-size: 18px;
+    font-weight: 700;
+}
+</style>
+</head>
+<body class="vege-body">
+    <div class="vege-bg">
+        <div class="vege-message">
+            <a href="https://vege.love" class="vege-a">
+                <img src="https://vege.love/media/img/vegelove.jpg" width="135" height="135">
+            </a>
+            <div class="vege-h1">Dzień dobry!</div>
+            <div class="vege-content">Twoje zamówienie {ID} z dnia {TIME} zostało:</div>
+
+			<div class="vege-center">
+                <div class="vege-btn vege-accept">Przyjęte do realizacji</div>
+            </div>
+
+            <!--
+            <div class="vege-center">
+                <div class="vege-btn vege-cancel">Odrzucone</div>
+            </div>
+            -->
+
+			<div class="vege-nice">
+				Życzymy miłego dnia.
+			</div>
+
+            <div class="vege-bottom">
+                <div class="vege-name">Vege Love</div>
+                <div class="vege-city">02-777 Warszawa</div>
+                <div class="vege-str">ul. Komisji Edukacji Narodowej 85</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
