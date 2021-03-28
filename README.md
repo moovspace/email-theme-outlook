@@ -1,2 +1,2 @@
-# email-theme-outlook
-Html email theme for outlook and google mail.
+# Html email themes
+Html email theme for outlook and google mail without tables only divs.
